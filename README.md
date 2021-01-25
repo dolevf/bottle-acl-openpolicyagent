@@ -2,7 +2,7 @@
 Add Authorization to Python's Bottle Framework with Open Policy Agent
 
 # About
-This small example app demonstrates how to implement Access Control / Authorization to Python's Bottle Framework using Open Policy Agent.
+This small example app demonstrates how to implement Access Control / Authorization in Python's Bottle Framework, using Open Policy Agent.
 
 You can get a list of movies, delete or add movies to the list, depending on the requesting user's permissions.
 
