@@ -12,6 +12,9 @@ The application has 2 built in users and roles:
 
 The app comes with a simple Open Policy Agent policy.
 
+By default, the App will query OPA locally on http://localhost:8181, you can change this by setting an environment variable:
+`export OPA_SERVER="http://opa.server:8181"`
+
 # Usage
 ## Download OPA
 Download OPA from: https://www.openpolicyagent.org/docs/latest/#running-opa
@@ -55,7 +58,7 @@ requests.post('http://localhost:8080/movies/Matrix', headers={'X-Requesting-User
 '{"data": ["despicable me", "borat", "Matrix"]}'
 ```
 
-### Delete movies using an authorized user (delete)
+### Delete movies using an authorized user (DELETE)
 Deleting a movie with David's user should be successful, since David has read-write permissions.
 ```
 requests.delete('http://localhost:8080/movies/Matrix', headers={'X-Requesting-User':'john'}).text
