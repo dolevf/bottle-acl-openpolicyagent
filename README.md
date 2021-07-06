@@ -1,4 +1,4 @@
-# bottle-acl-openpolicyagent
+# Bottle Authorization with Open Policy Agent
 Add Authorization to Python's Bottle Framework with Open Policy Agent
 
 # About
